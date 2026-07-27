@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dnyaneshwari Sanap — Software Development Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="scrollProgress"></div>
+    <div class="bg-grid"></div>
+    <div class="glow-orb one"></div>
+    <div class="glow-orb two"></div>
+
+    <div class="editor-bar">
+        <div class="titlebar">
+            <div class="dots"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span></div>
+            <span class="path">~/dnyaneshwari-sanap/portfolio</span>
+        </div>
+        <nav class="tabs" id="tabs">
+            <a class="tab active" href="#hero" data-target="hero">Hero<span class="ext">.js</span></a>
+            <a class="tab" href="#about" data-target="about">About<span class="ext">.js</span></a>
+            <a class="tab" href="#skills" data-target="skills">Skills<span class="ext">.json</span></a>
+            <a class="tab" href="#experience" data-target="experience">Experience<span class="ext">.js</span></a>
+            <a class="tab" href="#projects" data-target="projects">Projects<span class="ext">/</span></a>
+            <a class="tab" href="#education" data-target="education">Education<span class="ext">.md</span></a>
+            <a class="tab" href="#contact" data-target="contact">Contact<span class="ext">.js</span></a>
+        </nav>
+    </div>
+
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="terminal">
+                <div class="terminal-head">
+                    <div class="dots"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span></div>
+                    <span>zsh — whoami.sh</span>
+                </div>
+                <div class="terminal-body" id="terminalBody">
+                    <div><span class="prompt">➜</span> <span class="cmdline">whoami</span></div>
+                    <div class="out-name">Dnyaneshwari Sanap</div>
+                    <div class="out-role">Aspiring Software Development Engineer</div>
+                    <div style="margin-top:10px;"><span class="prompt">➜</span> <span class="cmdline">cat objective.txt</span></div>
+                    <div class="out-obj" style="margin-top:8px;">
+                        B.Tech Computer Science student focused on Java, Data Structures &amp; Algorithms, and full-stack development — building backend systems and AI-powered platforms with modern web technologies. Looking for SDE roles to apply problem-solving and system design
+                        skills to real products.
+                    </div>
+                    <div style="margin-top:14px;"><span class="prompt">➜</span> <span class="cmdline">_</span><span class="cursor"></span></div>
+                </div>
+            </div>
+            <div class="hero-cta">
+                <a class="btn btn-primary" href="#projects">./view-projects.sh</a>
+                <a class="btn btn-ghost" href="#contact">./get-in-touch.sh</a>
+                <a class="btn btn-ghost" href="https://github.com/sanapdnyanu" target="_blank" rel="noopener">github.com/sanapdnyanu</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <div class="line-label"><span class="num">01</span><span class="kw">const</span> <span class="fn">about</span> <span class="tok-punc">=</span> <span class="str">() =&gt; </span></div>
+            <h2 class="section-title">About</h2>
+
+            <p class="about-text reveal">
+                I'm a final-year <strong>B.E. Computer Science Engineering</strong> student at Prof. Ram Meghe College of Engineering &amp; Management, Amravati, with a Diploma in Computer Engineering behind me. I like taking systems apart to understand
+                how they hold up under real conditions — from dispatch logic in an ambulance tracker to traceability in a pharma supply chain. My stack centers on <strong>Java, React.js, and Node.js</strong>, backed by solid fundamentals in DSA, OOP,
+                DBMS, OS, and Computer Networks. Currently looking for SDE opportunities where I can apply that foundation to impactful, real-world products.
+            </p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <div class="line-label"><span class="num">02</span><span class="kw">import</span> <span class="str">skills</span> <span <h2 class="section-title">Technical Skills</h2>
+            <p class="section-sub">// the stack, grouped by role</p>
+            <div class="code-block reveal">
+                <div class="cb-head">skills.json</div>
+                <pre><span class="tok-brace">{</span>
+                <span class="tok-key">"languages"</span><span class="tok-punc">:</span> <span class="tok-punc">[</span><span class="tok-str">"Java"</span><span class="tok-punc">,</span> <span class="tok-str">"JavaScript"</span><span class="tok-punc">,</span>                <span class="tok-str">"Python"</span><span class="tok-punc">]</span><span class="tok-punc">,</span>
+                <span class="tok-key">"frontend"</span><span class="tok-punc">:</span> <span class="tok-punc">[</span><span class="tok-str">"React.js"</span><span class="tok-punc">,</span> <span class="tok-str">"HTML"</span><span class="tok-punc">,</span>                <span class="tok-str">"CSS"</span><span class="tok-punc">]</span><span class="tok-punc">,</span>
+                <span class="tok-key">"backend"</span><span class="tok-punc">:</span> <span class="tok-punc">[</span><span class="tok-str">"Node.js"</span><span class="tok-punc">,</span> <span class="tok-str">"Express.js"</span><span class="tok-punc">]</span>
+                <span class="tok-punc">,</span>
+                <span class="tok-key">"databases"</span><span class="tok-punc">:</span> <span class="tok-punc">[</span><span class="tok-str">"MongoDB"</span><span class="tok-punc">,</span> <span class="tok-str">"MySQL"</span><span class="tok-punc">]</span>
+                <span class="tok-punc">,</span>
+                <span class="tok-key">"core_cs"</span><span class="tok-punc">:</span> <span class="tok-punc">[</span><span class="tok-str">"DSA"</span><span class="tok-punc">,</span> <span class="tok-str">"OOP"</span><span class="tok-punc">,</span>
+                <span class="tok-str">"DBMS"</span><span class="tok-punc">,</span> <span class="tok-str">"OS"</span><span class="tok-punc">,</span> <span class="tok-str">"CN"</span><span class="tok-punc">]</span><span class="tok-punc">,</span>
+                <span class="tok-key">"tools"</span><span class="tok-punc">:</span> <span class="tok-punc">[</span><span class="tok-str">"GitHub"</span><span class="tok-punc">,</span> <span class="tok-str">"Postman"</span><span class="tok-punc">]</span>
+                <span class="tok-brace">}</span></pre>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="container">
+            <div class="line-label"><span class="num">03</span><span class="kw">function</span> <span class="fn">experience</span><span class="tok-punc">()</span> <span class="str">{</span></div>
+            <h2 class="section-title">Experience</h2>
+            <p class="section-sub">// where the code went to production</p>
+            <div class="exp-card reveal">
+                <div class="exp-head">
+                    <div class="exp-role">Software Development Intern</div>
+                    <div class="exp-org">Mount Reach Solutions Pvt. Ltd.</div>
+                </div>
+                <ul class="bullets">
+                    <li>Developed and integrated frontend and backend modules using React.js, Node.js, and REST APIs for web applications.</li>
+                    <li>Handled API integration, database queries, and application workflows end to end.</li>
+                    <li>Collaborated with developers to debug issues, ship new features, and maintain clean, reusable code across multiple projects.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <div class="line-label"><span class="num">04</span><span class="kw">export</span> <span class="fn">projects</span><span class="tok-punc">[]</span></div>
+            <h2 class="section-title">Projects</h2>
+            <p class="section-sub">// systems built end to end</p>
+            <div class="projects-grid">
+
+                <div class="proj-card reveal" data-index="1">
+                    <div class="proj-file"><span class="dotf"></span> hospital-queue-bed-management/</div>
+                    <div class="proj-body">
+                        <div class="proj-title">Hospital Queue &amp; Bed Management System</div>
+                        <ul class="bullets">
+                            <li>Built a real-time Ambulance Dispatch System with GPS tracking and instant hospital notifications, significantly reducing emergency response coordination time.</li>
+                            <li>Integrated an AI chatbot for symptom checking so patients get instant medical guidance, cutting average hospital wait time.</li>
+                            <li>Engineered a bed management module on Firebase, improving hospital resource allocation and emergency readiness.</li>
+                        </ul>
+                        <div class="tag-row">
+                            <span class="tag">React.js</span><span class="tag">Firebase</span><span class="tag">AI Chatbot</span><span class="tag">GPS Tracking</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="proj-card reveal" data-index="2">
+                    <div class="proj-file"><span class="dotf"></span> pharma-supply-chain-logistics/</div>
+                    <div class="proj-body">
+                        <div class="proj-title">Pharma Supply Chain Logistics System</div>
+                        <ul class="bullets">
+                            <li>Built the platform with React.js on the frontend and Node.js + Express.js on the backend, using MongoDB as the database.</li>
+                            <li>Designed a blockchain-based traceability module ensuring 100% immutable tracking of pharmaceutical shipments across the supply chain.</li>
+                            <li>Applied Python-based generative AI for route and inventory optimization, reducing planning time and the risk of counterfeit goods entering the chain.</li>
+                        </ul>
+                        <div class="tag-row">
+                            <span class="tag">React.js</span><span class="tag">Node.js</span><span class="tag">MongoDB</span><span class="tag">Blockchain</span><span class="tag">GenAI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="proj-card reveal" data-index="3">
+                    <div class="proj-file"><span class="dotf"></span> tour-organisation-app/</div>
+                    <div class="proj-body">
+                        <div class="proj-title">Tour Organisation App</div>
+                        <ul class="bullets">
+                            <li>Built a full-stack tour organisation system with Android Studio, XAMPP, and MySQL, supporting both traveller booking and admin management in one platform.</li>
+                            <li>Implemented secure login and real-time booking status updates for smooth coordination between travellers and admins.</li>
+                            <li>Designed an admin dashboard for managing tour packages, tracking bookings, and generating reports.</li>
+                        </ul>
+                        <div class="tag-row">
+                            <span class="tag">Android Studio</span><span class="tag">XAMPP</span><span class="tag">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="container">
+            <div class="line-label"><span class="num">05</span><span class="kw">#</span> <span class="fn">education.md</span></div>
+            <h2 class="section-title">Education</h2>
+            <p class="section-sub">// the record before the repo</p>
+
+            <div class="edu-row reveal">
+                <div class="edu-years">2024–2027</div>
+                <div>
+                    <div class="edu-deg">B.E. — Computer Science Engineering</div>
+                    <div class="edu-inst">Prof. Ram Meghe College of Engineering &amp; Management, Amravati</div>
+                </div>
+            </div>
+            <div class="edu-row reveal">
+                <div class="edu-years">2021–2024</div>
+                <div>
+                    <div class="edu-deg">Diploma — Computer Engineering</div>
+                    <div class="edu-inst">Dr. Panjabrao Deshmukh Polytechnic, Amravati</div>
+                </div>
+            </div>
+
+            <div style="margin-top:44px;">
+                <div class="line-label" style="margin-bottom:18px;"><span class="num">06</span><span class="kw">const</span> <span class="fn">interests</span> <span class="tok-punc">=</span></div>
+                <div class="chip-row">
+                    <span class="chip">Coding &amp; Problem Solving</span>
+                    <span class="chip">Travelling &amp; Exploration</span>
+                    <span class="chip">Reading &amp; Self-Development</span>
+                    <span class="chip">Technology &amp; Innovation</span>
+                    <span class="chip">Open Source Contribution</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" style="border-bottom:none;">
+        <div class="container">
+            <div class="line-label"><span class="num">07</span><span class="kw">export default</span> <span class="fn">contact</span><span class="tok-punc">()</span></div>
+            <h2 class="section-title">Contact</h2>
+            <p class="section-sub">// open a pull request, or just say hi</p>
+            <div class="contact-wrap reveal">
+                <a class="contact-link" href="mailto:sanapdnyaneshwari03@gmail.com">
+                    <span><span class="k">email</span><br><span class="v">sanapdnyaneshwari03@gmail.com</span></span>
+                    <span class="arrow">→</span>
+                </a>
+                <a class="contact-link" href="tel:+918766615045">
+                    <span><span class="k">phone</span><br><span class="v">+91 87666 15045</span></span>
+                    <span class="arrow">→</span>
+                </a>
+                <a class="contact-link" href="https://linkedin.com/in/dnyaneshwarisanap" target="_blank" rel="noopener">
+                    <span><span class="k">linkedin</span><br><span class="v">/in/dnyaneshwarisanap</span></span>
+                    <span class="arrow">→</span>
+                </a>
+                <a class="contact-link" href="https://github.com/sanapdnyanu" target="_blank" rel="noopener">
+                    <span><span class="k">github</span><br><span class="v">/sanapdnyanu</span></span>
+                    <span class="arrow">→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            // built with HTML, CSS &amp; JavaScript · Amravati, Maharashtra · © <span id="year"></span> Dnyaneshwari Sanap
+        </div>
+    </footer>
+
+    <button id="toTop" aria-label="Back to top" title="Back to top">↑</button>
+    <div id="toast" role="status" aria-live="polite"></div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
