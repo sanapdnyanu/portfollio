@@ -14,4 +14,3 @@ This site is built to highlight my work and provide an easy way for people to co
 - **[CSS3](ca://s?q=CSS3_portfolio_website)**
 - **[JavaScript](ca://s?q=JavaScript_portfolio_website)**
 
-## 📂 Project Structure
